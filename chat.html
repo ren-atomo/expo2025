@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expo Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Expo2025 チャット掲示板</h1>
+  <div id="chat">
+    <div id="chat-log" class="chat-log"></div>
+    <div class="chat-form">
+      <input id="chat-user" placeholder="名前">
+      <input id="chat-message" placeholder="メッセージ">
+      <button onclick="sendMessage()">送信</button>
+    </div>
+  </div>
+
+  <p><a href="index.html">← 万博ナビに戻る</a></p>
+
+  <script src="script.js"></script>
+  <script>
+    setInterval(loadChat, 5000);
+    loadChat();
+  </script>
+</body>
+</html>
