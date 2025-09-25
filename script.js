@@ -1,4 +1,4 @@
-const GAS_URL = "あなたのGASデプロイURL";
+const GAS_URL = "https://script.google.com/macros/s/AKfycbzlisoXfiHPCFMWn3Mf72x4lY99ZLMSkTOnqX8NLm5Tda9MuB3EJ3-abCYb5Aknins1/exec";
 
 // チャット読み込み
 async function loadChat() {
