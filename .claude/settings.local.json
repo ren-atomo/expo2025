@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Recurse)",
+      "Bash(Select-Object FullName)",
+      "Bash(Sort-Object FullName)",
+      "Bash(cp \"IMG_9995.jpg\" \"assets/images/works/hamon.jpg\")",
+      "Bash(cp \"There_are_me.jpg\" \"assets/images/works/there-are-me.jpg\")",
+      "Bash(cp \"image1.jpg\" \"assets/images/works/hamon-katsukawa.jpg\")",
+      "Bash(cp \"image2.jpg\" \"assets/images/works/shibuya-no01.jpg\")",
+      "Bash(cp \"tedxutokyo2025.jpeg\" \"assets/images/works/tedxutokyo2025.jpeg\")",
+      "Bash(rm IMG_9995.jpg There_are_me.jpg image1.jpg image2.jpg tedxutokyo2025.jpeg play_sound.jpeg unleash.jpg hamon.jpg 'hamon - 1.jpeg' 'hamon - 2.jpeg' 'hamon - 3.jpeg' 'hamon - 4.jpeg' 'tuki - 1.jpeg' 'tuki - 2.jpeg' 'tuki - 3.jpeg' 'ted - 1.jpeg' 'ted - 2.jpeg' 'ted - 3.jpeg' 'asobu - 1.jpeg' 'asobu - 2.jpeg' 'asobu - 3.jpeg' 'asobu - 4.jpeg' 'unle - 1.jpeg' 'unle - 2.jpeg' 'unle - 3.jpeg')",
+      "Bash(ls *.jpg *.jpeg)"
+    ]
+  }
+}

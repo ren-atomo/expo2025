@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/common.css' | relative_url }}">
+    {% if page.page_css %}<link rel="stylesheet" href="{{ page.page_css | relative_url }}">{% endif %}
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="{{ '/' | relative_url }}" class="logo">堤 廉太郎</a>
+            <nav>
+                <a href="{{ '/#works' | relative_url }}"{% if page.current == 'works' %} class="current"{% endif %}>Works</a>
+                <a href="{{ '/philosophy.html' | relative_url }}"{% if page.current == 'philosophy' %} class="current"{% endif %}>Philosophy</a>
+                <a href="{{ '/profile.html' | relative_url }}"{% if page.current == 'profile' %} class="current"{% endif %}>Profile</a>
+                <a href="{{ '/experiments.html' | relative_url }}"{% if page.current == 'experiments' %} class="current"{% endif %}>Experiments</a>
+            </nav>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="{{ '/#works' | relative_url }}"{% if page.current == 'works' %} class="current"{% endif %}>Works</a>
+        <a href="{{ '/philosophy.html' | relative_url }}"{% if page.current == 'philosophy' %} class="current"{% endif %}>Philosophy</a>
+        <a href="{{ '/profile.html' | relative_url }}"{% if page.current == 'profile' %} class="current"{% endif %}>Profile</a>
+        <a href="{{ '/experiments.html' | relative_url }}"{% if page.current == 'experiments' %} class="current"{% endif %}>Experiments</a>
+    </div>
+
+    {{ content }}
+
+    <div class="scroll-to-top" id="scrollToTop"></div>
+
+    <footer>
+        <p>© 2025 堤 廉太郎</p>
+    </footer>
+
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    {% if page.page_js %}<script src="{{ page.page_js | relative_url }}"></script>{% endif %}
+</body>
+</html>

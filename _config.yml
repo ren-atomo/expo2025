@@ -1,4 +1,8 @@
+title: "堤 廉太郎 | Portfolio"
+description: "cg / picture / event — 堤 廉太郎のポートフォリオ"
+author: "堤 廉太郎"
 url: "https://ren-atomo.github.io"
-baseurl: ""
+baseurl: "/about"
+lang: ja
 plugins:
   - jekyll-sitemap
